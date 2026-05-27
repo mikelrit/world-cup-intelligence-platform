@@ -1,0 +1,18 @@
+World Cup Intelligence Platform
+
+Goal:
+Build a data engineering and analytics platform that collects World Cup and football data from APIs, transforms and analyzes the data using a medallion-style architecture, and visualizes insights and predictions through Power BI dashboards.
+
+Main Focus Areas:
+- Data pipelines
+- APIs
+- SQL
+- Power BI
+- Automation
+- Analytics
+- Prediction models
+- Medallion architecture concepts
+- System design
+
+Long-Term Goal:
+Create a project that demonstrates enterprise-style data engineering and analytics skills relevant to solutions architecture and modern data platforms.

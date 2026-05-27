@@ -1,0 +1,23 @@
+Potential APIs:
+- API-Football
+- football-data.org
+
+Potential Data:
+- Fixtures
+- Teams
+- Players
+- Rankings
+- Match history
+- Standings
+- Odds
+- Player stats
+- Injuries
+- Possession
+- Goals
+
+Potential Outputs:
+- Match predictions
+- Group advancement probabilities
+- Upset radar
+- Team strength index
+- Player dependency score
