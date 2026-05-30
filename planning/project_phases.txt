@@ -1,0 +1,20 @@
+Phase 1
+API Connection
+
+Phase 2
+Raw Layer Ingestion
+
+Phase 3
+Bronze Layer Cleaning
+
+Phase 4
+Silver Layer Modeling
+
+Phase 5
+Gold Layer Analytics
+
+Phase 6
+Power BI Dashboards
+
+Phase 7
+Prediction Models
