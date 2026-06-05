@@ -9,14 +9,14 @@ load_dotenv()
 
 API_KEY = os.getenv("API_FOOTBALL_KEY")
 
-url = "https://v3.football.api-sports.io/standings"
+url = "https://v3.football.api-sports.io/players"
 
 headers = {
     "x-apisports-key": API_KEY
 }
 
 params = {
-    "league": 39,
+    "team": 33,
     "season": 2023
 }
 
@@ -26,10 +26,10 @@ print(response.status_code)
 
 data = response.json()
 
-output_folder = Path("data/raw/standings")
+output_folder = Path("data/raw/players")
 output_folder.mkdir(parents=True, exist_ok=True)
 
-output_file = output_folder / "standings.json"
+output_file = output_folder / "players.json"
 
 with open(output_file, "w") as file:
     json.dump(data, file, indent=4)
