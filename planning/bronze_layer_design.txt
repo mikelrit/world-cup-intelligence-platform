@@ -1,0 +1,25 @@
+Bronze Layer Purpose
+
+Store raw API data in a more organized and queryable format.
+
+Raw Layer:
+- teams.json
+- fixtures.json
+- standings.json
+- players.json
+
+Bronze Layer Outputs:
+
+teams_bronze.json
+fixtures_bronze.json
+standings_bronze.json
+players_bronze.json
+
+Transformations:
+- Remove unnecessary metadata
+- Standardize field names
+- Keep only useful attributes
+- Preserve source data integrity
+
+Goal:
+Prepare data for Silver layer analytics.
