@@ -1,0 +1,11 @@
+Gold Layer Purpose
+
+Create business-ready analytics datasets and KPIs.
+
+Potential Outputs:
+
+- Team Strength Index
+- Match Prediction Dataset
+- Group Advancement Probability
+- Player Dependency Score
+- World Cup Dashboard Metrics
