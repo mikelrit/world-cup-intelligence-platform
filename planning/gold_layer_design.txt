@@ -9,3 +9,7 @@ Potential Outputs:
 - Group Advancement Probability
 - Player Dependency Score
 - World Cup Dashboard Metrics
+
+team_strength_index
+player_dependency_score
+world_cup_power_rankings
