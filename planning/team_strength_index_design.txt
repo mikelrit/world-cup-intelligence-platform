@@ -1,0 +1,32 @@
+Inputs:
+
+From
+team_performance_silver.json
+standings_analysis_silver.json
+
+Fields
+points_per_match
+win_percentage
+goal_difference
+goals_for_per_match
+goals_against_per_match
+
+Outputs:
+team_name
+team_strength_score
+strength_rank
+
+Example Formula
+Team Strength Score
+
+=
+(win_percentage * 0.40)
+
++
+(points_per_match * 0.30)
+
++
+(goal_difference * 0.20)
+
++
+(goals_for_per_match * 0.10)

@@ -18,3 +18,21 @@ Power BI Dashboards
 
 Phase 7
 Prediction Models
+
+Phase 1 - Planning
+✅ Complete
+
+Phase 2 - API Connectivity
+✅ Complete
+
+Phase 3 - Raw Layer
+✅ Complete
+
+Phase 4 - Bronze Layer
+✅ Complete
+
+Phase 5 - Silver Layer
+✅ Complete
+
+Phase 6 - Gold Layer
+🚧 In Progress
