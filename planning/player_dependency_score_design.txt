@@ -1,0 +1,64 @@
+Player Dependency Score Design
+
+Purpose:
+Create a Gold layer metric that estimates how important each player is to their team based on attacking production, involvement, efficiency, and availability.
+
+Input Dataset:
+data/silver/player_performance/player_performance_silver.json
+
+Key Input Fields:
+- player_id
+- player_name
+- team_id
+- team_name
+- position
+- appearances
+- minutes
+- rating
+- goals_total
+- goals_assists
+- goal_contributions
+- goals_per_90
+- assists_per_90
+- shots_on_target_rate
+- key_pass_rate
+- duel_success_rate
+- dribble_success_rate
+- injured
+
+Formula Version 1:
+Player Dependency Score =
+(goal_contributions * 3)
++ (goals_per_90 * 20)
++ (assists_per_90 * 20)
++ (rating * 5)
++ (duel_success_rate * 10)
++ (dribble_success_rate * 10)
++ (key_pass_rate * 10)
+
+Adjustment:
+If injured = true, subtract 10 points.
+
+Output Dataset:
+data/gold/player_dependency_score/player_dependency_score.json
+
+Output Fields:
+- player_id
+- player_name
+- team_id
+- team_name
+- position
+- appearances
+- minutes
+- rating
+- goal_contributions
+- goals_per_90
+- assists_per_90
+- player_dependency_score
+- dependency_rank
+
+Business Value:
+This metric helps identify which players a team may rely on most for production, efficiency, and overall performance. It can support future World Cup analysis, team previews, player comparison, and dashboard storytelling.
+
+Notes:
+This is Version 1 of the formula. It is not meant to be perfect. The goal is to demonstrate how Silver layer player metrics can be converted into a Gold layer analytics KPI.
