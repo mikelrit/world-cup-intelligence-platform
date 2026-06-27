@@ -1,0 +1,89 @@
+World Cup Power Rankings Design
+
+Purpose:
+Create a final Gold layer ranking that combines team strength and player impact into one business-ready score. This dataset will act as the main ranking system for the World Cup Intelligence Platform.
+
+Input Datasets:
+- data/gold/team_strength_index/team_strength_index.json
+- data/gold/player_dependency_score/player_dependency_score.json
+
+Main Idea:
+A strong team should rank highly if it has:
+- strong team performance
+- high win percentage
+- strong points per match
+- good goal difference
+- productive players
+- highly rated player contributors
+
+Output Dataset:
+data/gold/world_cup_power_rankings/world_cup_power_rankings.json
+
+Key Input Fields From Team Strength Index:
+- team_id
+- team_name
+- league_name
+- season
+- rank
+- points
+- matches_played
+- wins
+- losses
+- goals_for
+- goals_against
+- goals_diff
+- win_percentage
+- points_per_match
+- team_strength_score
+- strength_rank
+
+Key Input Fields From Player Dependency Score:
+- team_id
+- player_name
+- position
+- rating
+- goal_contributions
+- goals_per_90
+- assists_per_90
+- player_dependency_score
+- dependency_rank
+
+Derived Team Player Metrics:
+For each team, calculate:
+- average_player_dependency_score
+- top_player_dependency_score
+- top_player_name
+- total_goal_contributions
+
+Formula Version 1:
+World Cup Power Score =
+(team_strength_score * 0.70)
++
+(average_player_dependency_score * 0.20)
++
+(top_player_dependency_score * 0.10)
+
+Reasoning:
+- Team strength should matter most because football is team-based.
+- Average player dependency shows overall squad quality.
+- Top player dependency captures whether a team has a star player who can heavily influence results.
+
+Output Fields:
+- team_id
+- team_name
+- league_name
+- season
+- strength_rank
+- team_strength_score
+- average_player_dependency_score
+- top_player_dependency_score
+- top_player_name
+- total_goal_contributions
+- world_cup_power_score
+- power_rank
+
+Business Value:
+This ranking creates a simple, explainable way to compare teams using both team-level and player-level performance. It can support dashboard storytelling, matchup previews, team comparisons, and future match prediction logic.
+
+Notes:
+This is Version 1 of the formula. It is not intended to be a perfect prediction model. The purpose is to show how multiple Gold datasets can be combined into a final analytics-ready output.
